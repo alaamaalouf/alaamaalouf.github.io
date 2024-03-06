@@ -91,13 +91,14 @@
     <p></p>
     <div style="font-size:12.5pt;" align="justify">
       <p>
-        I am a postdoctoral researcher at <a href='https://www.mit.edu/'>MIT</a> <a href="https://www.csail.mit.edu/">CSAIL</a>, working with <a href="http://danielarus.csail.mit.edu/">Prof. Daniela Rus</a>. Additionally, I am a postdoctoral associate at <a href='https://www.harvard.edu/'>Harvard</a>  <a href='https://seas.harvard.edu/'>SEAS</a>. 
-        During my postdoc, I am also collaborating with <a href="https://groups.csail.mit.edu/vision/torralbalab/">Prof. Antonio Torralba</a> and <a href="https://seas.harvard.edu/person/robert-wood">Prof. Robert J. Wood</a>.  
+        I am a postdoctoral researcher at <a href='https://www.mit.edu/'>MIT</a> <a href="https://www.csail.mit.edu/">CSAIL</a>, working with <a href="http://danielarus.csail.mit.edu/">Prof. Daniela Rus</a>. 
+        Additionally, I am an associate at <a href='https://www.harvard.edu/'>Harvard</a>  <a href='https://seas.harvard.edu/'>SEAS</a> and a machine learning researcher at <a href='https://www.projectceti.org/'>Project CETI</a> working closely wit <a href="https://groups.csail.mit.edu/vision/torralbalab/">Prof. Antonio Torralba</a> , <a href="https://seas.harvard.edu/person/robert-wood">Prof. Robert J. Wood</a>, and <a href="https://www.davidgruber.com/">Prof. David Gruber</a>.
+        
         Previously, I received my Ph.D. from the Department of Computer Science at the University of Haifa, where I was supervised by <a href="https://people.csail.mit.edu/dannyf/"> Prof. Dan Feldman</a>.
 
       </p>
       <p>
-        My main research interests lie in the intersection of Deep/Machine Learning, Vision, Robotics, and Big Data. I am specifically passionate about contributing to society by making Machine/Deep Learning algorithms more efficient, reliable, and applicable in order to enhance their (daily) usage in different fields such as Computer Vision and Robotics.
+        My main research interests lie in the intersection of Deep/Machine Learning, Vision, Robotics, and Big Data. I am passionate about contributing to society by making Machine/Deep Learning algorithms more efficient, reliable, and applicable in order to enhance their (daily) usage in real life.
       </p>
     </div>
     </td>
@@ -144,6 +145,8 @@
   <tr><td>
     <sectionheading>News</sectionheading>
     <ul>
+      <li>[02/2024] <a href="https://drive-anywhere.github.io/">Drive Anywhere</a> is accepted to ICRA 2024.</li>
+      <li>[02/2024] <a href="https://ieeexplore.ieee.org/abstract/document/10436161">FollowAnything</a> is accepted to RA-L. </li>
     <li>[09/2023] 1 paper accepted to NeurIPS 2023: <a href="https://arxiv.org/abs/2305.14113">On the Size and Approximation Error of Distilled Sets </a> </li>
     <li>[08/2023] Our newest preprint <a href="https://github.com/alaamaalouf/FollowAnything/">FollowAnything</a> is the publication of the week on the - <a href="https://www.weeklyrobotics.com/weekly-robotics-2602">Weekly Robotics</a>!</li>
     <li>[04/2023] 2 papers accepted to ICML 2023: 1. <a href="https://github.com/alaamaalouf/AutoCoreset">AutoCoreset: An Automatic Practical Coreset Construction Framework</a> and 2. <a href="https://github.com/muradtuk/Provable-Data-Subset-Selection-For-Efficient-Neural-Network-Training">Provable Data Subset Selection For Efficient Neural Network Training</a> </li>
@@ -188,13 +191,65 @@
 
 
 
-<!-- =================== Preprints =================== -->
+<!-- =================== Preprints ===================
 
 <table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
 
 <tr><td><sectionheading>Preprints</sectionheading></td></tr>
 </table>
 <table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
+
+</table> -->
+
+<!-- ====================================================================  -->
+
+<!-- =================== Publications =================== -->
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
+
+<tr><td><sectionheading>Publications</sectionheading></td></tr>
+</table>
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
+<tr><td><sectionheading>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2024</sectionheading></td></tr>
+
+
+<tr>
+    <td width="33%" valign="top" align="center">
+      <a href="#/"></a>
+      <img src="images/driveany.png" alt="sym" width="100%" height="100%"
+        style="border-radius:15px; opacity:1.0; filter:alpha(opacity=80);"></a>
+    </td>
+    <td width="67%" valign="top">
+      <p><a href="#" id="Follow">
+          <heading>Drive Anywhere: Generalizable End-to-end Autonomous Driving with Multi-modal Foundation Models</heading>
+        </a><br>
+        
+        Tsun-Hsuan Wang, <b><u>Alaa Maalouf</b></u>, Wei Xiao, Yutong Ban, Alexander Amini, Guy Rosman, Sertac Karaman,  Daniela Rus
+        <br>
+        ICRA 2024
+      </p>
+  
+      <div class="paper" id="drive">
+       <a href="https://arxiv.org/abs/2310.17642">paper</a> |
+        <a href="javascript:toggleblock('drive_abs')">abstract</a> |
+        <a shape="rect" href="javascript:togglebib('drive')" class="togglebib">bibtex</a> |
+        <a href="https://drive-anywhere.github.io/">code and webpage</a> | 
+        <a href="https://www.youtube.com/watch?v=4n-DJf8vXxo">video</a> 
+        <p align="justify"><i id="drive_abs">As autonomous driving technology matures, end-to-end methodologies have emerged as a leading strategy, promising seamless integration from perception to control via deep learning. However, existing systems grapple with challenges such as unexpected open set environments and the complexity of black-box models. At the same time, the evolution of deep learning introduces larger, multimodal foundational models, offering multi-modal visual and textual understanding. In this paper, we harness these multimodal foundation models to enhance the robustness and adaptability of autonomous driving systems, enabling out-of-distribution, end-to-end, multimodal, and more explainable autonomy. Specifically, we present an approach to apply end-to-end open-set (any environment/scene) autonomous driving that is capable of providing driving decisions from representations queryable by image and text. To do so, we introduce a method to extract nuanced spatial (pixel/patch-aligned) features from transformers to enable the encapsulation of both spatial and semantic features. Our approach (i) demonstrates unparalleled results in diverse tests while achieving significantly greater robustness in out-of-distribution situations, and (ii) allows the incorporation of latent space simulation (via text) for improved training (data augmentation via text) and policy debugging. 
+        </i></p>
+<pre xml:space="preserve">
+@article{wang2023drive,
+  title={Drive anywhere: Generalizable end-to-end autonomous driving with multi-modal foundation models},
+  author={Wang, Tsun-Hsuan and Maalouf, Alaa and Xiao, Wei and Ban, Yutong and Amini, Alexander and Rosman, Guy and Karaman, Sertac and Rus, Daniela},
+  journal={arXiv preprint arXiv:2310.17642},
+  year={2023}
+}
+
+
+
+
+
+
+
 <tr>
     <td width="33%" valign="top" align="center">
       <a href="#/"></a>
@@ -207,11 +262,11 @@
         </a><br>
         <b><u>Alaa Maalouf</b></u>, Ninad Jadhav, Krishna Murthy Jatavallabhula, Makram Chahine, Daniel M.Vogt, Robert J. Wood, Antonio Torralba, Daniela Rus
         <br>
-        arXiv
+        RA-L 2024
       </p>
   
       <div class="paper" id="follow">
-       <a href="https://arxiv.org/abs/2308.05737">paper</a> |
+       <a href="https://ieeexplore.ieee.org/abstract/document/10436161">paper</a> |
         <a href="javascript:toggleblock('follow_abs')">abstract</a> |
         <a shape="rect" href="javascript:togglebib('follow')" class="togglebib">bibtex</a> |
         <a href="https://github.com/alaamaalouf/FollowAnything">code and webpage</a> | 
@@ -219,14 +274,17 @@
         <p align="justify"><i id="follow_abs">Tracking and following objects of interest is critical to several robotics use cases, ranging from industrial automation to logistics and warehousing, to healthcare and security. In this paper, we present a robotic system to detect, track, and follow any object in real-time. Our approach, dubbed ``follow anything'' (FAn), is an open-vocabulary and multimodal model -- it is not restricted to concepts seen at training time and can be applied to novel classes at inference time using text, images, or click queries. Leveraging rich visual descriptors from large-scale pre-trained models (foundation models), FAn can detect and segment objects by matching multimodal queries (text, images, clicks) against an input image sequence. These detected and segmented objects are tracked across image frames, all while accounting for occlusion and object re-emergence. We demonstrate FAn on a real-world robotic system (a micro aerial vehicle) and report its ability to seamlessly follow the objects of interest in a real-time control loop. FAn can be deployed on a laptop with a lightweight (6-8 GB) graphics card, achieving a throughput of 6-20 frames per second. To enable rapid adoption, deployment, and extensibility, we open-source all our code on our project webpage.
         </i></p>
 <pre xml:space="preserve">
-@article{maalouf2023follow,
-  title={Follow Anything: Open-set detection, tracking, and following in real-time},
-  author={Maalouf, Alaa and Jadhav, Ninad and Jatavallabhula, Krishna Murthy and 
-         Chahine, Makram and Vogt, Daniel M and Wood, Robert J and 
-         Torralba, Antonio and Rus, Daniela},
-  journal={arXiv preprint arXiv:2308.05737},
-  year={2023}
-}
+@ARTICLE{maalouf2024follow,
+  author={Maalouf, Alaa and Jadhav, Ninad and Jatavallabhula, Krishna Murthy and Chahine, Makram and Vogt, Daniel M. and Wood, Robert J. and Torralba, Antonio and Rus, Daniela},
+  journal={IEEE Robotics and Automation Letters}, 
+  title={Follow Anything: Open-Set Detection, Tracking, and Following in Real-Time}, 
+  year={2024},
+  volume={9},
+  number={4},
+  pages={3283-3290},
+  keywords={Robots;Feature extraction;Real-time systems;Fans;Streaming media;Whales;Task analysis;AI-enabled robotics;object detection;segmentation and categorization;semantic scene understanding},
+  doi={10.1109/LRA.2024.3366013}}
+
 
 
 
@@ -236,16 +294,7 @@
 </div>
 </td>
 </tr>
-</table>
 
-<!-- ====================================================================  -->
-
-<!-- =================== Publications =================== -->
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
-
-<tr><td><sectionheading>Publications</sectionheading></td></tr>
-</table>
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
 
 <tr><td><sectionheading>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2023</sectionheading></td></tr>
 <tr>
@@ -1165,6 +1214,9 @@ url={https://openreview.net/forum?id=EQfpYwF3-b}
 </script>
 <script xml:space="preserve" language="JavaScript">
   hideblock('follow_abs');
+</script>
+<script xml:space="preserve" language="JavaScript">
+  hideblock('drive_abs');
 </script>
 
 
